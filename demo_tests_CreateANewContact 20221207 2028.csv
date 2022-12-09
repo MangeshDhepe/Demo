@@ -1,0 +1,4 @@
+started, ended, path, name, successful, skipped, failed
+2022-12-07 20:28:55.655,2022-12-07 20:37:38.551,C:\Users\MangeshDhepe\Desktop\Provar File\demo,,0,0,0
+2022-12-07 20:28:55.655,1970-01-01 05:30:00.000,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests,,0,0,0
+2022-12-07 20:28:55.655,2022-12-07 20:29:20.778,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests,CreateANewContact.testcase,0,0,0

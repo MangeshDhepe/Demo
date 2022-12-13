@@ -1,0 +1,6 @@
+started, ended, path, name, successful, skipped, failed
+2022-12-12 16:43:47.835,1970-01-01 05:30:00.000,C:\Users\MangeshDhepe\Desktop\Provar File\demo,,0,0,1
+2022-12-12 16:43:47.835,1970-01-01 05:30:00.000,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests,,0,0,1
+2022-12-12 16:43:47.835,1970-01-01 05:30:00.000,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests\Trial Tests,,0,0,1
+2022-12-12 16:43:47.835,2022-12-12 16:46:21.319,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests\Trial Tests\Solved Exercises,,0,0,1
+2022-12-12 16:43:47.835,2022-12-12 16:46:21.319,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests\Trial Tests\Solved Exercises,Exercise 5 Create Account and Contact.testcase,0,0,1

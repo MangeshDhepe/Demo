@@ -36,5 +36,14 @@ public class WebToCaseV3 {
 	@LinkType()
 	@FindBy(xpath = "//a[normalize-space(.)='Contacts']")
 	public WebElement contacts;
+	@LinkType()
+	@FindBy(xpath = "//a[normalize-space(.)='Accounts']")
+	public WebElement accounts;
+	@LinkType()
+	@FindBy(xpath = "//one-app-nav-bar-menu-item/a[normalize-space(.)='Opportunities']")
+	public WebElement opportunities;
+	@LinkType()
+	@FindBy(xpath = "//a[normalize-space(.)='Cases']")
+	public WebElement cases;
 			
 }

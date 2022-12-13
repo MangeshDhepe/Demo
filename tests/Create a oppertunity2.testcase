@@ -228,6 +228,30 @@
                 </apiParam>
               </generatedParameters>
             </apiCall>
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="12" title="Set Values: ">
+              <arguments>
+                <argument id="values">
+                  <value class="valueList" mutable="Mutable">
+                    <namedValues mutable="Mutable">
+                      <namedValue name="valuePath"/>
+                      <namedValue name="value"/>
+                      <namedValue name="valueScope">
+                        <value class="value" valueClass="string">Test</value>
+                      </namedValue>
+                    </namedValues>
+                  </value>
+                </argument>
+              </arguments>
+              <resultAssertions>
+                <resultAssertion/>
+                <resultAssertion/>
+              </resultAssertions>
+              <parameterValueSources>
+                <parameterValueSource variableName="SourceData" variableScope="Test"/>
+                <parameterValueSource variableName="SourceData" variableScope="Test"/>
+                <parameterValueSource variableName="SourceData" variableScope="Test"/>
+              </parameterValueSources>
+            </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="10" title="Set the Close Date field to {DateAdd(TODAY)}">
               <arguments>
                 <argument id="locator">

@@ -1,0 +1,4 @@
+started, ended, path, name, successful, skipped, failed
+2022-12-10 21:29:07.193,2022-12-10 21:38:47.279,C:\Users\MangeshDhepe\Desktop\Provar File\demo,,0,0,0
+2022-12-10 21:29:07.193,1970-01-01 05:30:00.000,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests,,0,0,0
+2022-12-10 21:29:07.193,2022-12-10 21:30:57.957,C:\Users\MangeshDhepe\Desktop\Provar File\demo\tests,Create Account.testcase,0,0,0

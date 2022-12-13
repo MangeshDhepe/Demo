@@ -7,13 +7,35 @@
   <sourcePath>src</sourcePath>
   <secureStoragePath>.secrets</secureStoragePath>
   <browserDebugPort>0</browserDebugPort>
+  <variables>
+    <testVariable name="Phone">
+      <valueType class="textType">
+        <constraints>
+          <valueConstraint name="minLength">0</valueConstraint>
+          <valueConstraint name="maxLength">9999</valueConstraint>
+        </constraints>
+      </valueType>
+      <summary/>
+      <values>
+        <testVariableValue>
+          <value class="value" valueClass="string">9011529415</value>
+        </testVariableValue>
+      </values>
+    </testVariable>
+  </variables>
   <connectionClasses>
     <connectionClass name="sf">
       <connections>
-        <connection id="d1ee8186-5bc8-454d-989a-15f9cc7a4207" name="admin">
+        <connection id="1be6d964-8b7e-4c54-a6ff-42d3bfe67610" name="Admin2">
           <summary/>
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="55891936-47c2-4af7-a978-250e4c3198ca" url="sf:user=mangesh.dhepe195@provar.trialsbx1;password={password};environment=SANDBOX;lightningMode=true"/>
+            <connectionUrl secureStorageNodeId="513cac8f-b0b0-406f-bf3d-017bcd3a2e79" url="sf:user=mangesh.dhepe195@provar.trialsbx1;password={password};environment=SANDBOX;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="00dec064-29db-4081-a3bd-23c981baa4ca" name="Admin3">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="56e79fae-cc8c-406a-9fc2-7a547ac0a02f" url="sf:user=mangesh.dhepe195@provar.trialsbx1;password={password};environment=SANDBOX;lightningMode=true"/>
           </connectionUrls>
         </connection>
       </connections>

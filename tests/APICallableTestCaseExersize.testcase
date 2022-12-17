@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="2" registryId="f45c8224-e3e3-4043-9291-6493febe3719" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="3" title="Set Values: AccountName">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">OppName</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="compound">
+                  <parts>
+                    <value valueClass="string">Opp</value>
+                    <funcCall id="UniqueId"/>
+                  </parts>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">AccountName</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">Barton Media</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: Admin2 (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">Admin2</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Admin2</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Sales</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" name="StepGroup" testItemId="4" title="Search Account and create opportunity under it">
+      <arguments>
+        <argument id="description">
+          <value class="value" valueClass="string">Search Account and create opportunity under it</value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="hidden" testItemId="5"/>
+      </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="7" title="Create Object: Opportunity=&gt;OpportunityId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Opportunity</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">OpportunityId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">Admin2</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="Name">
+          <value class="value" valueClass="string">Opportunity Avinash</value>
+        </argument>
+        <argument id="StageName">
+          <value class="value" valueClass="string">Qualification</value>
+        </argument>
+        <argument id="CloseDate">
+          <value class="value" valueClass="date">1671235200000</value>
+        </argument>
+        <argument id="AccountId">
+          <value class="variable">
+            <path element="AccountRows"/>
+            <path element="Id"/>
+          </value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">Admin2</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Opportunity</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="StageName" title="StageName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=CloseDate" name="CloseDate" title="CloseDate"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=AccountId" name="AccountId" title="AccountId"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

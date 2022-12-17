@@ -112,6 +112,9 @@
                 <argument id="resultScope">
                   <value class="value" valueClass="string">Test</value>
                 </argument>
+                <argument id="soqlColumnAliases">
+                  <value class="valueList" mutable="Mutable"/>
+                </argument>
               </arguments>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexSoqlQuery" name="ApexSoqlQuery" testItemId="21" title="SOQL Query: select Id from Account where Name='{AccountName}'=&gt;AccountRows">
@@ -135,6 +138,9 @@
                 </argument>
                 <argument id="resultScope">
                   <value class="value" valueClass="string">Test</value>
+                </argument>
+                <argument id="soqlColumnAliases">
+                  <value class="valueList" mutable="Mutable"/>
                 </argument>
               </arguments>
             </apiCall>
@@ -200,10 +206,10 @@
     </apiCall>
   </steps>
   <params>
-    <param linkedToUrl="provar:hasvalue:b1e8d652-ac65-4c21-a80e-4f7bdd36467b" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="StageName" title="StageName">
+    <param linkedToUrl="provar:hasvalue:b1e8d652-ac65-4c21-a80e-4f7bdd36467b" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="StageName" passwordVariableAllowed="true" title="StageName">
       <summary/>
     </param>
-    <param linkedToUrl="provar:hasvalue:3250458e-039a-4229-875e-c98aa715db86" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Probability" name="Probability" title="Probability">
+    <param linkedToUrl="provar:hasvalue:3250458e-039a-4229-875e-c98aa715db86" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Probability" name="Probability" passwordVariableAllowed="true" title="Probability">
       <summary/>
     </param>
   </params>

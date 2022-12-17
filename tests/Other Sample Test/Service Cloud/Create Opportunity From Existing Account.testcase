@@ -394,7 +394,7 @@
                         <argument id="autoRetry"/>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="value" seq="10000" title="Value">
+                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                           <summary>The value to be populated.</summary>
                           <type>
                             <textType>
@@ -419,7 +419,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="77" title="Set the Opportunity Name field to pharma123">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="81" title="Set the Opportunity Name field to pharma123">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=Name&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DOpportunity%26field%3DName"/>
@@ -450,7 +450,7 @@
                         <argument id="autoRetry"/>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="value" seq="10000" title="Value">
+                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Name" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                           <summary>The value to be populated.</summary>
                           <type>
                             <textType>
@@ -510,7 +510,7 @@
                         <argument id="autoRetry"/>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=CloseDate" name="value" seq="10000" title="Value">
+                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=CloseDate" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                           <summary>The value to be populated.</summary>
                           <type>
                             <dateType/>
@@ -565,7 +565,7 @@
                         <argument id="autoRetry"/>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="value" seq="10000" title="Value">
+                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=StageName" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                           <summary>The value to be populated.</summary>
                           <type>
                             <choiceType>
@@ -625,7 +625,7 @@
                         <argument id="autoRetry"/>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Amount" name="value" seq="10000" title="Value">
+                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Amount" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                           <summary>The value to be populated.</summary>
                           <type>
                             <numericType>
@@ -786,7 +786,7 @@
                         <argument id="autoRetry"/>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Amount" name="value" seq="10000" title="Value">
+                        <apiParam group="value" modelBinding="sf:ui:binding:object?object=Opportunity&amp;field=Amount" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                           <summary>The value to be populated.</summary>
                           <type>
                             <numericType>

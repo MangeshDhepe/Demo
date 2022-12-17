@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase failureBehaviour="Continue" id="10">
+<testCase failureBehaviour="Continue" id="1">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: Admin (Test)">
@@ -30,7 +30,9 @@
         <argument id="enableObjectIdLogging">
           <value class="value" valueClass="boolean">true</value>
         </argument>
-        <argument id="autoCleanup"/>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
         <argument id="cleanupConnectionName"/>
         <argument id="logFileLocation"/>
         <argument id="username"/>

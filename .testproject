@@ -40,6 +40,18 @@
         </connection>
       </connections>
     </connectionClass>
+    <connectionClass name="webservice">
+      <connections>
+        <connection id="d5f25790-63b5-4208-88ac-efa396a4870b" name="Jira">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="b696282c-a49a-4f44-b933-bbda7ba75b59" url="restservice:url=https://mangesh2303.atlassian.net/;user=mangesh23031999@gmail.com;password={password};authenticationType=BASIC_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
   </connectionClasses>
   <browserConfigurations>
     <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">

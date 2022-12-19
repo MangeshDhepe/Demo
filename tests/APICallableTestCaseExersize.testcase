@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase id="2" registryId="f45c8224-e3e3-4043-9291-6493febe3719" visibility="Internal">
+<testCase id="20" registryId="f45c8224-e3e3-4043-9291-6493febe3719" visibility="Internal">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="3" title="Set Values: AccountName">
@@ -84,9 +84,45 @@
           <value class="value" valueClass="string">Search Account and create opportunity under it</value>
         </argument>
       </arguments>
+      <parameterValueSources>
+        <parameterValueSource variableName="SourceData1" variableScope="Test">
+          <sourceValue class="excelTarget" namesLocation="FirstColumnOfRange" whereComparison="EqualTo">
+            <worksheetName class="value" valueClass="string"/>
+            <valuesRange class="value" valueClass="string"/>
+          </sourceValue>
+        </parameterValueSource>
+      </parameterValueSources>
       <clauses>
         <clause name="hidden" testItemId="5"/>
       </clauses>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="8" title="Set Values: NewOpportunity">
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">NewOpportunity</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="compound">
+                  <parts>
+                    <value valueClass="string">Opp: </value>
+                    <funcCall id="UniqueId">
+                      <argument id="length">
+                        <value class="value" valueClass="decimal">6</value>
+                      </argument>
+                    </funcCall>
+                  </parts>
+                </value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="7" title="Create Object: Opportunity=&gt;OpportunityId">
       <arguments>
@@ -104,18 +140,21 @@
           <value class="value" valueClass="string">Test</value>
         </argument>
         <argument id="Name">
-          <value class="value" valueClass="string">Opportunity Avinash</value>
+          <value class="variable">
+            <path element="SourceData1"/>
+          </value>
         </argument>
         <argument id="StageName">
-          <value class="value" valueClass="string">Qualification</value>
+          <value class="value" valueClass="string">SourceData1}</value>
         </argument>
         <argument id="CloseDate">
-          <value class="value" valueClass="date">1671235200000</value>
+          <value class="variable">
+            <path element="SourceData1"/>
+          </value>
         </argument>
         <argument id="AccountId">
           <value class="variable">
-            <path element="AccountRows"/>
-            <path element="Id"/>
+            <path element="SourceData1"/>
           </value>
         </argument>
       </arguments>
@@ -131,4 +170,8 @@
       </generatedParameters>
     </apiCall>
   </steps>
+  <parameterValueSources>
+    <parameterValueSource variableName="SourceData" variableScope="Test"/>
+    <parameterValueSource variableName="SourceData" variableScope="Test"/>
+  </parameterValueSources>
 </testCase>

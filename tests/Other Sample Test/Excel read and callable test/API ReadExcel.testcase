@@ -9,13 +9,18 @@
         </argument>
       </arguments>
       <parameterValueSources>
-        <parameterValueSource url="excel:templates/OppData.xlsx?worksheet=Sheet1&amp;range=A1%3AB3&amp;namesLocation=FirstRowOfRange&amp;whereComparison=EqualTo" variableName="ExcelData" variableScope="Test">
+        <parameterValueSource variableName="ExcelData" variableScope="Test">
           <cacheToken>C:\\Users\\Geraint\\Provar\\dreamforce\\Dreamforce15\\templates\\OppData.xlsx;1442325800727</cacheToken>
           <cachedParameters>
             <apiParam name="RowNumber"/>
             <apiParam name="StageName"/>
             <apiParam name="Probability"/>
           </cachedParameters>
+          <sourceValue class="excelTarget" namesLocation="FirstRowOfRange" whereComparison="EqualTo">
+            <workbookPath class="value" valueClass="string">templates/OppData.xlsx</workbookPath>
+            <worksheetName class="value" valueClass="string">Sheet1</worksheetName>
+            <valuesRange class="value" valueClass="string">A1:C4</valuesRange>
+          </sourceValue>
         </parameterValueSource>
       </parameterValueSources>
       <clauses>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase id="1">
+<testCase id="3">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="8" title="Set Values: ActivitySubject">
@@ -102,7 +102,7 @@
       <clauses>
         <clause name="substeps" testItemId="3">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithRow" name="UiWithRow" testItemId="4" title="With Case rows {CASES_CASE_NUMBER = &quot;00003055&quot;}">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithRow" name="UiWithRow" testItemId="4" title="With Case rows 1">
               <arguments>
                 <argument id="uiConnectionName">
                   <value class="value" valueClass="string">Admin2</value>
@@ -110,16 +110,9 @@
                 <argument id="locator">
                   <value class="uiLocator" uri="sf:ui:locator:row?table=ObjectHome%2Frecent%2FrecentTable"/>
                 </argument>
-                <argument id="uiRowLocator">
-                  <value class="eq">
-                    <lhs class="variable">
-                      <path element="CASES_CASE_NUMBER"/>
-                    </lhs>
-                    <rhs class="value" valueClass="string">00003055</rhs>
-                  </value>
-                </argument>
+                <argument id="uiRowLocator"/>
                 <argument id="locatorDescription">
-                  <value class="value" valueClass="string">With Case rows {CASES_CASE_NUMBER = "00003055"}</value>
+                  <value class="value" valueClass="string">With Case rows 1</value>
                 </argument>
                 <argument id="failIfNotFound">
                   <value class="value" valueClass="boolean">true</value>
@@ -242,7 +235,7 @@
       <clauses>
         <clause name="substeps" testItemId="10">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="11" title="Set the Subject field to  Call {ActivitySubject}">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="11" title="Set the Subject field to {ActivitySubject}">
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=Subject&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DTask%26field%3DSubject"/>
@@ -260,20 +253,15 @@
                   <value class="uiWait" uri="default"/>
                 </argument>
                 <argument id="interactionDescription">
-                  <value class="value" valueClass="string">Set the Subject field to  Call {ActivitySubject}</value>
+                  <value class="value" valueClass="string">Set the Subject field to {ActivitySubject}</value>
                 </argument>
                 <argument id="autoRetry"/>
                 <argument id="interaction">
                   <value class="uiInteraction" uri="ui:interaction?name=set"/>
                 </argument>
                 <argument id="value">
-                  <value class="compound">
-                    <parts>
-                      <value valueClass="string"> Call </value>
-                      <variable>
-                        <path element="ActivitySubject"/>
-                      </variable>
-                    </parts>
+                  <value class="variable">
+                    <path element="ActivitySubject"/>
                   </value>
                 </argument>
                 <argument id="blur">
